@@ -2,7 +2,7 @@ pfosTab = readtable('./DAManalysis/PFOA Young Climbing.xlsx');
 
 %%
 
-maleTab =pfosTab(:, {'Treatment', 'Replicate', 'Males'});
+maleTab =pfosTab(:, {'Treatment', 'Replicate', 'FeMales'});
 maleTab = renamevars(maleTab, 'Males', 'Climbing');
 maleTab.pSex = repmat({'M'}, height(maleTab), 1);
 
